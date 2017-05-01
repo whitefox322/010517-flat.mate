@@ -9,4 +9,61 @@
    &__img {
       width: 275px;
    }
+
+   &__field {
+      margin-bottom: 60px;
+   }
+
+   &__star,
+   &__text,
+   &__link {
+      font-family: @font;
+      line-height: @lineHeight;
+   }
+
+   &__star {
+      font-size: 43px;
+      color: #be393b;
+      vertical-align: text-bottom;
+   }
+
+   &__text {
+      color: #d7d7d7;
+      font-size: 35px;
+   }
+
+   &__form {
+      height: 100px;
+      background: transparent;
+   }
+
+   &__btn {
+      text-align: right;
+      margin: 100px 0;
+   }
+
+   &__link {
+      display: inline-block;
+      padding: 0 50px;
+      border-radius: 4px;
+      background: @contactBtnColor;
+      font-size: 36px;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      &:focus,
+      &:hover {
+         background: lighten(@contactBtnColor, 15%);
+         text-decoration: none;
+         color: lighten(#fff, 15%);
+      }
+
+      &:active {
+         background: darken(@contactBtnColor, 15%);
+         text-decoration: none;
+         color: darken(#fff, 15%);
+      }
+   }
 }

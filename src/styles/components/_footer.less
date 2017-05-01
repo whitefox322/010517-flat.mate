@@ -1,0 +1,123 @@
+.footer {
+   background: #2a2d33;
+   padding: 50px 0 30px 0;
+
+   &__logo {
+      display: inline-block;
+      height: @footerHeight;
+      position: relative;
+      font-size: @footerHeight - 5px;
+      padding-left: 44px;
+      line-height: @footerHeight;
+      color: @color;
+      text-decoration: none;
+      transition: color .3s;
+      text-transform: capitalize;
+
+      &:before,
+      &:after {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         height: 0;
+         width: 0;
+         border: @footerHeight/2 solid @iconBaseColor;
+         border-radius: 50%;
+         transition: border-color .3s;
+      }
+
+      &:after {
+         border-color: @iconOverColor;
+         border-right-color: transparent;
+         border-top-color: transparent;
+         transform: rotate(45deg);
+      }
+
+      &:focus,
+      &:hover,
+      &:active {
+         text-decoration: none;
+      }
+
+      &:focus,
+      &:hover {
+         color: lighten(@color, 15%);
+
+         &:before {
+            border-color: lighten(@iconBaseColor, 15%);
+         }
+         &:after {
+            border-left-color: lighten(@iconOverColor, 15%);
+            border-bottom-color: lighten(@iconOverColor, 15%);
+         }
+      }
+
+      &:active {
+         color: darken(@color, 15%);
+
+         &:before {
+            border-color: darken(@iconBaseColor, 15%);
+         }
+         &:after {
+            border-left-color: darken(@iconOverColor, 15%);
+            border-bottom-color: darken(@iconOverColor, 15%);
+         }
+      }
+   }
+
+   &__sign {
+      font-family: @font;
+      font-size: 18px;
+      color: @footerIconColor;
+      text-transform: capitalize;
+
+      &--modified {
+         text-transform: uppercase;
+      }
+   }
+
+   &__list {
+      list-style: none;
+      padding: 0;
+      margin: -10px 0 0 0;
+      text-align: right;
+   }
+
+   &__item {
+      display: inline-block;
+      margin-left: 50px;
+   }
+
+   &__link {
+      display: inline-block;
+      background: @footerBgColor;
+      width: @iconSize - 25px;
+      height: @iconSize - 25px;
+      border: 3px solid @footerIconColor;
+      border-radius: 50%;
+      font-size: 25px;
+      font-weight: bold;
+      color: @footerIconColor;
+      text-align: center;
+      line-height: @iconSize - 25px;
+
+      &:focus,
+      &:hover {
+         background: @footerIconColor;
+         color: @footerBgColor;
+         text-decoration: none;
+      }
+
+      &:active {
+         background: darken(@footerIconColor, 15%);
+         border-color: darken(@footerIconColor, 15%);
+         color: darken(@footerBgColor, 15%);
+         text-decoration: none;
+      }
+   }
+
+   &__icon {
+      font-size: 30px;
+   }
+}
