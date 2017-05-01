@@ -1,0 +1,63 @@
+.logo {
+   display: inline-block;
+   height: @height;
+   position: relative;
+   font-size: 41px;
+   padding-left: @height+20px;
+   line-height: @height;
+   color: @color;
+   text-decoration: none;
+   transition: color .3s;
+   text-transform: capitalize;
+
+   &:before,
+   &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 0;
+      width: 0;
+      border: @height/2 solid @iconBaseColor;
+      border-radius: 50%;
+      transition: border-color .3s;
+   }
+
+   &:after {
+      border-color: @iconOverColor;
+      border-right-color: transparent;
+      border-top-color: transparent;
+      transform: rotate(45deg);
+   }
+
+   &:focus,
+   &:hover,
+   &:active {
+      text-decoration: none;
+   }
+
+   &:focus,
+   &:hover {
+      color: lighten(@color, 15%);
+
+      &:before {
+         border-color: lighten(@iconBaseColor, 15%);
+      }
+      &:after {
+         border-left-color: lighten(@iconOverColor, 15%);
+         border-bottom-color: lighten(@iconOverColor, 15%);
+      }
+   }
+
+   &:active {
+      color: darken(@color, 15%);
+
+      &:before {
+         border-color: darken(@iconBaseColor, 15%);
+      }
+      &:after {
+         border-left-color: darken(@iconOverColor, 15%);
+         border-bottom-color: darken(@iconOverColor, 15%);
+      }
+   }
+}

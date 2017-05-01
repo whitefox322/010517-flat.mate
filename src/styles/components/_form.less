@@ -1,0 +1,48 @@
+.form {
+   padding-bottom: 150px;
+
+   &__header,
+   &__bnt {
+      font-family: @font;
+   }
+
+   &__header {
+      &--main {
+         display: inline-block;
+         width: 100%;
+         font-size: 51px;
+         color: #fff;
+         line-height: @lineHeight;
+      }
+      &--small {
+         display: inline-block;
+         font-size: 26px;
+         line-height: @lineHeight;
+         color: #c5d2e5;
+         padding-top: 50px;
+         padding-bottom: 50px;
+      }
+   }
+
+   &__btn {
+      padding: 15px 50px;
+      text-decoration: none;
+      font-size: 36px;
+      color: @colorTextBtnRead;
+      text-transform: capitalize;
+      background: @colorBgBtnRead;
+
+      &:focus,
+      &:hover {
+         text-decoration: none;
+         color: lighten(@colorTextBtnRead, 15%);
+         background: lighten(@colorBgBtnRead, 15%);
+      }
+
+      &:active {
+         text-decoration: none;
+         color: darken(@colorTextBtnRead, 15%);
+         background: darken(@colorBgBtnRead, 15%);
+      }
+   }
+}

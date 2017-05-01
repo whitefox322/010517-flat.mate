@@ -1,0 +1,38 @@
+.login {
+   &__text,
+   &__btn {
+      display: inline-block;
+   }
+
+   &__text {
+      font-family: @font;
+      font-size: 20px;
+      font-weight: lighter;
+      font-style: italic;
+      color: #c9ced7;
+   }
+
+   &__btn {
+      padding: 5px 15px;
+      text-decoration: none;
+      font-family: @font;
+      font-size: 19px;
+      color: @colorTextBtn;
+      text-transform: uppercase;
+      background: @colorBgBtn;
+      margin-left: 24px;
+
+      &:hover,
+      &:focus {
+         text-decoration: none;
+         color: lighten(@colorTextBtn, 15%);
+         background: lighten(@colorBgBtn, 15%);
+      }
+
+      &:active {
+         text-decoration: none;
+         color: darken(@colorTextBtn, 15%);
+         background: darken(@colorBgBtn, 15%);
+      }
+   }
+}

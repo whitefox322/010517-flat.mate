@@ -1,0 +1,53 @@
+.video {
+   width: 100%;
+   background: #e9eaed;
+
+   &__header {
+      display: inline-block;
+      width: 100%;
+      padding: 50px 0;
+      text-align: center;
+
+      &--main {
+         font-family: @font;
+         font-size: 43px;
+         color: #4b596c;
+      }
+   }
+
+   &__play {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      position: relative;
+   }
+
+   &__img {
+      max-width: 100%;
+   }
+
+   &__btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 128px;
+      height: 128px;
+      margin-top: -64px;
+      margin-left: -64px;
+      text-align: center;
+   }
+
+   &__icon {
+      font-size: 128px;
+      color: #ecbebf;
+
+      &:focus,
+      &:hover {
+         color: lighten(#ecbebf, 15%);
+      }
+
+      &:active {
+         color: #2b3136;
+      }
+   }
+}

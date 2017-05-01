@@ -5,9 +5,244 @@
     <title>Flat Mate</title>
     <link rel="stylesheet" href="/css/vendor.min.css">
     <link rel="stylesheet" href="/css/app.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 </head>
 <body>
+<section class="hero">
+    <div class="hero--color"></div>
+    <div class="hero__header container">
+        <header class="header row">
+            <div class="header__logo col-xs-6">
+                <a href="#" class="logo">Flat mate</a>
+            </div>
+            <div class="header__login col-xs-6">
+                <div class="login">
+                    <div class="login__text">Have an Account?</div>
+                    <a href="#" class="login__btn button">Login</a>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="hero__content container">
+        <div class="content row">
+            <div class="content__form col-xs-7">
+                <div class="form">
+                    <h1 class="form__header">
+                        <span class="form__header--main">Lorem ipsum dolor sit amet</span>
+                        <small class="form__header--small">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Adipisci, eaque error exercitationem quae quos reiciendis repellendus reprehenderit
+                            rerum
+                            voluptates. Tempora.
+                        </small>
+                    </h1>
+                    <a href="#" class="form__btn button">Read more</a>
+                </div>
+            </div>
+            <div class="content__img col-xs-5">
+                <img src="/images/iconMessages.png" alt="Messages" class="img__message">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="doc">
+    <div class="container">
+        <div class="row doc__content">
+            <div class="col-xs-3 doc__img">
+                <img src="/images/heroDoc.png" alt="Document" class="imgDoc">
+            </div>
+            <div class="col-xs-7">
+                <h1 class="doc__text">
+                    <span class="doc__text--main">Lorem ipsum dolor sit amet</span>
+                    <small class="doc__text--small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis
+                        expedita impedit inventore magni pariatur placeat quibusdam temporibus. Magni nesciunt quidem
+                        suscipit temporibus? Consectetur delectus ipsum repudiandae sed!
+                    </small>
+                </h1>
+            </div>
+            <div class="col-xs-2 doc__icons">
+                <ul class="icon">
+                    <li class="icon__item">
+                        <a href="#" class="icon__pencil">
+                            <span class="fa fa-pencil"></span>
+                        </a>
+                    </li>
+                    <li class="icon__item">
+                        <a href="#" class="icon__facebook">
+                            f
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="slider">
+    <div class="container">
+        <header class="slider__header">
+            <span class="slider__header--main">
+                The modern era <span class="slider__header--little">of</span> web designing
+            </span>
+            <small class="slider__header--small">We make wireframe ultra fast, leak proof</small>
+        </header>
+    </div>
+    <div class="slider__element">
+        <div id="slider" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#slider" data-slide-to="0" class="active"></li>
+                <li data-target="#slider" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="container">
+                        <img src="/images/browser.png" alt="Browser" class="slider__img">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="container">
+                        <img src="/images/browser.png" alt="Browser" class="slider__img">
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control slider__control" href="#slider" role="button" data-slide="prev">
+                <span class="fa fa-chevron-circle-left slider__icon"></span>
+            </a>
+            <a class="right carousel-control slider__control" href="#slider" role="button" data-slide="next">
+                <span class="fa fa-chevron-circle-right slider__icon"></span>
+            </a>
+        </div>
+    </div>
+</section>
+<section class="price">
+    <div class="container">
+        <header class="price__header">
+            <span class="price__header--main">
+                A wireframe is the primitive skeleton of your website.
+            </span>
+            <small class="price__header--small">
+                Pick a plan from below to get started! Already 20000+ websites and webprojects<br>
+                have been successfully wireframed with HotGloo.
+            </small>
+        </header>
+        <div class="row price__tariff">
+            <div class="col-xs-4 tariff">
+                <div class="tariff__icon">
+                    <span class="fa fa-check tariff__symbol"></span>
+                </div>
+                <ul class="tariff__list">
+                    <li class="tariff__item tariff__item--first1">
+                        <span class="tariff__text tariff__text--first">Free</span>
+                    </li>
+                    <li class="tariff__item">
+                        <span class="tariff__text tariff__text--second1">$0/Month</span>
+                    </li>
+                    <li class="tariff__item">
+                        <span class="tariff__text">1 Project</span>
+                    </li>
+                    <li class="tariff__item">
+                        <span class="tariff__text">5 Members</span>
+                    </li>
+                    <li class="tariff__item">
+                        <span class="tariff__text">5 GB</span>
+                    </li>
+                </ul>
+                <button class="tariff__btn tariff__btn--1">
+                    <a href="#" class="tariff__link">Sign up</a>
+                </button>
+            </div>
+            <div class="col-xs-4 tariff">
+                <div class="tariff__icon">
+                    <span class="fa fa-check tariff__symbol"></span>
+                </div>
+                <ul class="tariff__list">
+                    <li class="tariff__item tariff__item--first2">
+                        <span class="tariff__text tariff__text--first">Professional</span>
+                    </li>
+                    <li class="tariff__item">
+                        <span class="tariff__text tariff__text--second2">$50/Month</span>
+                    </li>
+                    <li class="tariff__item">
+                        <span class="tariff__text">20 Project</span>
+                    </li>
+                    <li class="tariff__item">
+                        <span class="tariff__text">50 Members</span>
+                    </li>
+                    <li class="tariff__item">
+                        <span class="tariff__text">100 GB</span>
+                    </li>
+                </ul>
+                <button class="tariff__btn tariff__btn--2">
+                    <a href="#" class="tariff__link">Buy now</a>
+                </button>
+            </div>
+            <div class="col-xs-4 tariff">
+                <div class="tariff__icon">
+                    <span class="fa fa-check tariff__symbol"></span>
+                </div>
+                <ul class="tariff__list">
+                    <li class="tariff__item tariff__item--first3">
+                        <span class="tariff__text tariff__text--first">Enterprise</span>
+                    </li>
+                    <li class="tariff__item">
+                        <span class="tariff__text tariff__text--second3">$90/Month</span>
+                    </li>
+                    <li class="tariff__item">
+                        <span class="tariff__text">Unlimited</span>
+                    </li>
+                    <li class="tariff__item">
+                        <span class="tariff__text">Unlimited</span>
+                    </li>
+                    <li class="tariff__item">
+                        <span class="tariff__text">500 GB</span>
+                    </li>
+                </ul>
+                <button class="tariff__btn tariff__btn--3">
+                    <a href="#" class="tariff__link">Buy now</a>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="video">
+    <div class="container">
+        <header class="video__header">
+            <span class="video__header--main">
+                A wireframe is the primitive skeleton of your website.
+            </span>
+        </header>
+    </div>
+    <div class="video__play">
+        <img src="/images/videoPlaceholder.jpg" alt="Video" class="video__img">
+        <a href="#" class="video__btn">
+            <span class="fa fa-play-circle-o video__icon"></span>
+        </a>
+    </div>
 
+</section>
+<section class="contact">
+    <div class="container">
+        <div class="contact__logo">
+            <img src="/images/messageEnvelop.png" alt="Envelop" class="contact__img">
+        </div>
+        <form class="row">
+            <div class="col-xs-6">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="form-group">
+                    <label for="email">Message</label>
+                    <textarea class="form-control" rows="5"></textarea>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
 
 <script src="/js/vendor.min.js"></script>
 </body>

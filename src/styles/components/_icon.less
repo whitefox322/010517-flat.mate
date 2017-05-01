@@ -1,0 +1,41 @@
+.icon {
+   list-style: none;
+   margin: 0;
+   padding: 50px 0 0 0;
+
+   &__item {
+      padding: 20px 0;
+   }
+
+   &__pencil,
+   &__facebook {
+      display: inline-block;
+      width: @iconSize;
+      height: @iconSize;
+      border: 3px solid @iconColor;
+      border-radius: 50%;
+      font-size: 32px;
+      font-weight: bold;
+      padding-top: 11px;
+      color: @iconColor;
+
+      &:focus,
+      &:hover {
+         background: @iconColor;
+         color: #fff;
+         text-decoration: none;
+      }
+
+      &:active {
+         background: darken(@iconColor, 15%);
+         border-color: darken(@iconColor, 15%);
+         text-decoration: none;
+      }
+   }
+
+   &__facebook {
+      font-size: 45px;
+      font-family: @font;
+      padding-top: 5px;
+   }
+}

@@ -1,0 +1,140 @@
+.tariff {
+   display: inline-block;
+   padding-bottom: 150px;
+   position: relative;
+
+   &__icon {
+      position: absolute;
+      top: -3%;
+      right: 8%;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #f7ca52;
+      display: none;
+   }
+
+   &__symbol {
+      display: inline-block;
+      position: absolute;
+      top: 30%;
+      right: 30%;
+      font-size: 20px;
+      color: #fff;
+   }
+
+   &__list,
+   &__btn {
+      display: inline-block;
+      width: 90%;
+      text-align: center;
+   }
+
+   &__list {
+      list-style: none;
+      padding: 0 0 98px 0;
+      margin: 0;
+   }
+
+   &__item {
+      padding: 25px 0;
+      background: #dee9ec;
+
+      &--first1,
+      &--first2,
+      &--first3 {
+         padding: 15px 0;
+      }
+
+      &--first1 {
+         background: @freeColor;
+      }
+      &--first2 {
+         background: @proColor;
+      }
+      &--first3 {
+         background: @expColor;
+      }
+
+   }
+   &__text,
+   &__link {
+      font-family: @font;
+      font-size: 34px;
+      line-height: @lineHeight;
+   }
+
+   &__text {
+      color: #6d737b;
+
+      &--first {
+         color: #fff;
+      }
+
+      &--second1,
+      &--second2,
+      &--second3 {
+         font-weight: bold;
+      }
+
+      &--second1 {
+         color: @freeColor;
+      }
+      &--second2 {
+         color: @proColor;
+      }
+      &--second3 {
+         color: @expColor;
+      }
+   }
+
+   &__btn {
+      padding: 15px 0;
+
+      &--1 {
+         background: @freeColor;
+
+         &:focus,
+         &:hover {
+            background: darken(@freeColor, 15%);
+         }
+      }
+
+      &--2 {
+         background: @proColor;
+
+         &:focus,
+         &:hover {
+            background: darken(@proColor, 15%);
+         }
+      }
+
+      &--3 {
+         background: @expColor;
+
+         &:focus,
+         &:hover {
+            background: darken(@expColor, 15%);
+         }
+      }
+   }
+
+   &__link {
+      color: #fff;
+      text-transform: capitalize;
+
+      &:focus,
+      &:hover {
+         text-decoration: none;
+         color: darken(#fff, 15%);
+      }
+   }
+}
+
+.tariff:hover > .tariff__icon {
+   display: inline-block;
+}
+
+.tariff:focus > .tariff__icon {
+   display: inline-block;
+}
