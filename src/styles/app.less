@@ -24,3 +24,46 @@
 @import "components/_video";
 @import "components/_contact";
 @import "components/_footer";
+
+@media screen and (max-width: 768px) {
+   .header__login,
+   .header__logo,
+   .form,
+   .doc__img,
+   .doc__text,
+   .slider__header,
+   .contact__btn,
+   .footer__list {
+      text-align: center;
+   }
+
+   .slider__header {
+      &--main,
+      &--small {
+         text-indent: 0;
+      }
+   }
+
+   .footer__list {
+      margin: 0;
+   }
+
+   .footer__item {
+      margin: 20px;
+   }
+
+}
+
+@media screen and (max-width: 990px) {
+   .doc__img,
+   .slider__header {
+      text-align: center;
+   }
+
+   .slider__header {
+      &--main,
+      &--small {
+         text-indent: 0;
+      }
+   }
+}
